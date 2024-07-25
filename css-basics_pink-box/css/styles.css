@@ -9,25 +9,9 @@ body {
 }
 
 /* put a selector here to select div elements (see index.html) */
-
-.text {
-  font-size: large;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  text-emphasis-color: tomato;
-  
-}
-
-
 SELECTOR HERE {
   font-family: cursive;
-  height: 150px;
-  width: 150px;
   padding: 8px;
-  background-color: hotpink;
-  text-emphasis-color: white;
-  border-radius: 8px;
-  border: 2px solid #000;
-  
 
   /* set the height and the width of the box to 150px */
 
