@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0 45px 0;
+  font-family: system-ui;
+}
+
+/**
+ *
+ * Place the header at the top of the viewport and make sure, that it remains there when the
+ * document is scrolled.
+ */
+.header {
+  position: fixed; /* Fija el encabezado en la parte superior */
+  top: 0; /* Asegura que esté pegado al borde superior */
+  left: 0; /* Alinea el encabezado a la izquierda */
+  width: 100%; /* Ocupa todo el ancho de la ventana */
+  background: #8236FF;
+  color: #ffffff;
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  padding: 10px;
+}
+
+/* Estilo para el texto dentro del encabezado */
+.header__text {
+  color: #FFDEE2;
+}
+
+/* Estilo para el título del encabezado */
+.header__heading {
+  margin: 0;
+}
+
+/**
+ *
+ * Place the footer at the bottom of the viewport and make sure, that it remains there when the
+ * document is scrolled.
+ */
+
+ /* Estilo para el pie de página */
+.footer {
+  position: fixed; /* Fija el pie de página en la parte inferior */
+  bottom: 0; /* Asegura que esté pegado al borde inferior */
+  left: 0; /* Alinea el pie de página a la izquierda */
+  width: 100%; /* Ocupa todo el ancho de la ventana */
+  background:  #7fD9E2;
+  color: #ffffff;
+  height: 48px;
+}
+
+/**
+ *
+ * Define the card as reference frame for descendant elements, that require absolute positioning.
+ */
+
+ /* Estilo para la tarjeta - tener en cuenta lo que ocurre cuando se cambian los requerimientos */
+.card {
+  position: relative;  /* Establece la tarjeta como marco de referencia */
+  margin: 20px 10%;
+  border: 5px solid #8236FF;
+  padding: 3% 10%;
+  scroll-margin-top: 100px;
+  border-radius: 2rem;
+}
+
+/* Estilo para el título dentro de la tarjeta */
+.card__heading {
+  margin: 0 0 10px 0;
+}
+
+/**
+ * Place the bookmark in the top, right corner of each card.
+ */
+
+ /* Estilo para el marcador dentro de la tarjeta */
+
+.card__bookmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 2px solid #8236FF;
+  font-size: 2em;
+  padding: 6px 12px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+}
+
+/**
+ * The go-to-top button should cover all other elements, so that it is always visible, and
+ * unaffected when the document is scrolled.
+ */
+ /* Estilo para el botón "Ir arriba" */
+.goto-top {
+  position: fixed; /* Fija el botón en la ventana */
+  bottom: 50px; /* Ajusta la distancia desde la parte inferior */
+  right: 15px; /* Ajusta la distancia desde la derecha */
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 50%;
+  background: #8236FF;
+  color: white;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
