@@ -40,18 +40,24 @@ console.log(Fourth_number_nested_Number);
 // Put "rat" onto the end of petsWithPush variable by using the array method `.push()`.
 
 const petsWithPush = ["dog", "cat", "rabbit"];
-
-
+petsWithPush.petsWithPush("rat")
+console.log(petsWithPush);
 
 // EXERCISE 7
 // Use the pop method to remove the last item from fruitsWithPop.
 
 const fruitsWithPop = ["apple", "banana", "mango"];
+fruitsWithPop.pop();
+
+console.log(fruitsWithPop)
 
 // EXERCISE 8
 // Put "hamster" onto the start of unshiftedPets variable by using the array method unshift.
 
 const unshiftedPets = ["dog", "cat", "rabbit"];
+unshiftedPets.unshift("hamster");
+
+console.log(unshiftedPets);
 
 // EXERCISE 9
 // Use the shift method to remove the first item from shiftedFruits.
@@ -69,3 +75,20 @@ export {
   unshiftedPets,
   shiftedFruits,
 };
+
+
+shiftedFruits.shift()
+
+export {
+  exampleArray,
+  nestedArray,
+  firstNumber,
+  fruits,
+  nestedNumber,
+  petsWithPush,
+  fruitsWithPop,
+  unshiftedPets,
+  shiftedFruits,
+}; 
+
+console.log(shiftedFruits)
