@@ -4,11 +4,13 @@ console.clear();
 // Modify the array exampleArray so that it contains a number and a string.
 
 const exampleArray = [true];
+const exampleArray = [10, "Hi, my name is Monica"]
 
 // EXERCISE 2
 // Nest an array inside array nestedArray. After that nestedArray should contain an array as an element.
 
 const nestedArray = ["example", 10, true];
+const nestedArray = ["example", 10 , true ["nestedElement1", "nestedElement2", 20]]
 
 // EXERCISE 3
 // Change the value of firstNumber to equal the first value of the numbers array using bracket notation.
@@ -16,11 +18,13 @@ const nestedArray = ["example", 10, true];
 const numbers = [20, 10, 50];
 
 const firstNumber = "change me";
+const firstNumber = numbers[0]
 
 // EXERCISE 4
 // Change the fruit stored at index 0 of fruits to mango.
 
 const fruits = ["apple", "banana", "grapefruit"];
+fruits [0] = "Mango";
 
 // EXERCISE 5
 // Change the value of nestedNumber to equal the fourth number of nestedNumbers using bracket notation.
@@ -28,11 +32,16 @@ const fruits = ["apple", "banana", "grapefruit"];
 const nestedNumbers = [10, [20, 30, [40, 50]]];
 
 const nestedNumber = "change me";
+const Fourth_number_nested_Number = nestedNumbers[1][2][0]; // 1 es el segundo array, luego 2 es el numero 40 del segundo array
+
+console.log(Fourth_number_nested_Number);
 
 // EXERCISE 6
 // Put "rat" onto the end of petsWithPush variable by using the array method `.push()`.
 
 const petsWithPush = ["dog", "cat", "rabbit"];
+
+
 
 // EXERCISE 7
 // Use the pop method to remove the last item from fruitsWithPop.
