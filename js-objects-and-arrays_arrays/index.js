@@ -5,8 +5,8 @@ console.clear();
 
 const exampleArray = [true];
 
-exampleArray.push(5);
-exampleArray.push("Name")
+exampleArray.push(7);
+exampleArray.push("City")
 
 console.log(exampleArray)
 
@@ -14,7 +14,7 @@ console.log(exampleArray)
 //" Nest an array inside array nestedArray. After that nestedArray should contain an array as an element.
 
 const nestedArray = ["example", 10, true];
-nestedArray.push(["Age", 35, 3.14]);
+nestedArray.push(["Age", 30, 3.14]);
 
 console.log(nestedArray);
 
@@ -84,17 +84,5 @@ export {
 
 
 shiftedFruits.shift()
-
-export {
-  exampleArray,
-  nestedArray,
-  firstNumber,
-  fruits,
-  nestedNumber,
-  petsWithPush,
-  fruitsWithPop,
-  unshiftedPets,
-  shiftedFruits,
-}; 
 
 console.log(shiftedFruits)
