@@ -4,13 +4,19 @@ console.clear();
 // Modify the array exampleArray so that it contains a number and a string.
 
 const exampleArray = [true];
-const exampleArray = [10, "Hi, my name is Monica"]
+
+exampleArray.push(5);
+exampleArray.push("Name")
+
+console.log(exampleArray)
 
 // EXERCISE 2
-// Nest an array inside array nestedArray. After that nestedArray should contain an array as an element.
+//" Nest an array inside array nestedArray. After that nestedArray should contain an array as an element.
 
 const nestedArray = ["example", 10, true];
-const nestedArray = ["example", 10 , true ["nestedElement1", "nestedElement2", 20]]
+nestedArray.push(["Age", 35, 3.14]);
+
+console.log(nestedArray);
 
 // EXERCISE 3
 // Change the value of firstNumber to equal the first value of the numbers array using bracket notation.
@@ -40,7 +46,7 @@ console.log(Fourth_number_nested_Number);
 // Put "rat" onto the end of petsWithPush variable by using the array method `.push()`.
 
 const petsWithPush = ["dog", "cat", "rabbit"];
-petsWithPush.petsWithPush("rat")
+petsWithPush.push("rat")
 console.log(petsWithPush);
 
 // EXERCISE 7
