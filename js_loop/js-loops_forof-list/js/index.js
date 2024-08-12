@@ -19,4 +19,17 @@ const programmingLanguages = [
 
 // --v-- write/change code here --v--
 
+// Usando el bucle for...of para iterar sobre cada elemento del array
+for (const language of programmingLanguages) {
+    // Crear un nuevo elemento <li> para cada lenguaje
+    const li = document.createElement('li');
+    
+    // Establecer el texto del <li> al valor del lenguaje actual
+    li.textContent = language;
+    
+    // Añadir el <li> al <ol>
+    ol.appendChild(li);
+}
+
+
 // --^-- write/change code here --^--
