@@ -21,13 +21,41 @@ const animalStrings = [
   "rhino",
 ];
 
-const hippoExists = null;
+// const hippoExists = null;
+
+const hippoExists = animalStrings.includes("hippo"); // includes: para ver si existe - loop if / else o podria ser booler: true / false
+
+if (hippoExists) {
+  console.log("El hipopótamo está en la lista.");
+} else {
+  console.log("El hipopótamo no está en la lista.");
+}
 
 // Hint: You can pass the starting index as second parameter.
-const catStartingFromIndexFiveExists = null;
+// const catStartingFromIndexFiveExists = null;
+
+const catStartingFromIndexFiveExists = animalStrings.slice(5).includes("cat");
+
+if (catStartingFromIndexFiveExists) {
+  console.log("El gato está en la lista a partir del índice cinco.");
+} else {
+  console.log("El gato no está en la lista a partir del índice cinco.");
+}
 
 // Hint: Besides the array method, check out the string method `startsWith()`.
-const firstAnimalStartingWithLetterP = null;
+// const firstAnimalStartingWithLetterP = null;
+
+const firstAnimalStartingWithLetterP = animalStrings.find((animal) =>
+  animal.startsWith("p")
+);
+
+if (firstAnimalStartingWithLetterP) {
+  console.log(
+    `El primer animal que comienza con la letra "P" es: ${firstAnimalStartingWithLetterP}`
+  );
+} else {
+  console.log("No hay animales que comiencen con la letra 'P' en la lista.");
+}
 
 const indexOfGiraffe = null;
 
