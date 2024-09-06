@@ -1,10 +1,13 @@
 import BoxWithClassName from "../components/BoxWithClassName/BoxWithClassName.js";
+import BoxWithStyledComponents from "../components/BoxWithStyledComponents";
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <div>
-      <BoxWithClassName />
-      <BoxWithClassName isBlack />
+    <div style={{ display: "flex" }}>
+      <BoxWithClassName color="green" />
+      <BoxWithClassName color="black" />
+      <BoxWithStyledComponents $isBlack={false} />
+      <BoxWithStyledComponents $isBlack={true} />
     </div>
   );
 }
