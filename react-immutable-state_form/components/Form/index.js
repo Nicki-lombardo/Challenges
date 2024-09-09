@@ -11,21 +11,21 @@ export default function Form() {
     },
   });
 
-  function handleNameChange(event) {
+  function handleNameChange(e) {
     updateMountain((draft) => {
-      draft.name = event.target.value;
+      draft.name = e.target.value;
     });
   }
 
-  function handleAltitudeChange(event) {
+  function handleAltitudeChange(e) {
     updateMountain((draft) => {
-      draft.values.altitude = event.target.value;
+      draft.values.altitude = e.target.value;
     });
   }
 
-  function handleMountainRangeChange(event) {
+  function handleMountainRangeChange(e) {
     updateMountain((draft) => {
-      draft.values.mountainRange = event.target.value;
+      draft.values.mountainRange = e.target.value;
     });
   }
 
