@@ -1,4 +1,5 @@
-import { Fragment, useState } from "react";
+//import { Fragment, useState } from "react";
+import { useImmer } from "use-immer";
 import Winner from "../Winner";
 import {
   CarButton,
@@ -8,14 +9,21 @@ import {
   Track,
 } from "./CarRace.styled";
 import { initialCars, getRandomDistance } from "../../utils/utils";
+import { DraftModeProvider } from "next/dist/server/async-storage/draft-mode-provider";
 
 const finishLine = 200;
 
 export default function CarRace() {
-  const [cars, setCars] = useState(initialCars);
+  const [cars, setCars] = useImmer(initialCars);
 
   function moveCar(clickedCar) {
     const coveredDistance = getRandomDistance();
+    setCars((draft) => {
+      const car = draft.find((car) => car.emoji === clickedCar.emoji);
+      car.position.x += coveredDistance;
+      car.position.lastDistance = coveredDistance;
+    });
+
     console.log("clickedCar", clickedCar);
     console.log("coveredDistance", coveredDistance);
   }
