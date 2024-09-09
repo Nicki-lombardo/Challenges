@@ -4,7 +4,8 @@ import Form from "../components/Form";
 export default function HomePage() {
   return (
     <Layout>
-      <h1>Mountain Values</h1>
+      <h1>Mountain Values 
+      </h1>
       <Form />
     </Layout>
   );
