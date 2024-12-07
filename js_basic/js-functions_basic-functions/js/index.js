@@ -10,6 +10,15 @@ console.clear();
 
 // --v-- write your code here --v--
 
+const bookStore = {
+  book_title: "Deja de ser tú",
+  autor: "Joe Dispenza",
+  rating: 4.5,
+  number_of_sales: 536
+};
+
+console.log(bookStore)
+
 // --^-- write your code here --^--
 
 /*
@@ -26,6 +35,20 @@ Then log all variables to the console again.
 
 // --v-- write your code here --v--
 
+const book = {
+  title: "The lord of the Javascript",
+  autor: "Mario",
+  rating: 4.2,
+  sales: 120
+
+}
+
+console.log("Title: " + book.title)
+console.log("Author " + book.autor)
+console.log("Rating: " + book.rating)
+console.log("Sales " + book.sales)
+
+
 // --^-- write your code here --^--
 
 /*
@@ -37,5 +60,20 @@ Then log all variables to the console again.
 */
 
 // --v-- write your code here --v--
+
+function logBookData(bookData) {
+  console.log("Title: " + book.title);
+  console.log("Author " + book.autor);
+  console.log("Rating: " + book.rating)
+  console.log("Sales " + book.sales)
+
+}
+
+logBookData();
+// book.sales += 1;
+//book.sales += 2;
+
+
+
 
 // --^-- write your code here --^--
