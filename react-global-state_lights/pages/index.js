@@ -4,7 +4,7 @@ export default function HomePage() {
   return (
     <div>
       <h1>Home</h1>
-      <p>?? light(s) are on.</p>
+      <p>777 light(s) are on.</p>
       <p>
         <Link href="/lights">All lights →</Link>
       </p>
@@ -14,3 +14,23 @@ export default function HomePage() {
     </div>
   );
 }
+
+// nuevo codigo
+
+
+import Lights from "../components/Lights";
+
+const HomePage = ({ lights, onToggle }) => {
+  const turnedOnCount = lights.filter((light) => light.isOn).length;
+
+  return (
+    <div>
+      <h1>Home Page</h1>
+      <p>Turned on lights: {turnedOnCount}</p>
+      <Lights lights={lights} onToggle={onToggle} />
+    </div>
+  );
+};
+
+export default HomePage;
+

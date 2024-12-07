@@ -10,3 +10,28 @@ export default function Rooms({ lights, toggleLight }) {
     </>
   );
 }
+
+
+// nuevo codigo
+
+import Light from "./Light";
+
+
+
+const Lights = ({ lights, onToggle }) => {
+  return (
+    <div>
+      {lights.map((light) => (
+        <Light
+          key={light.id}
+          isOn={light.isOn}
+          name={light.name}
+          onToggle={() => onToggle(light.id)}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default Lights;
+
