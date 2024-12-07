@@ -14,18 +14,7 @@ Hint: Access the value by using `.value` on the input element
 
 const input = document.querySelector('[data-js="first-input"]');
 const uppercaseButton = document.querySelector('[data-js="button-uppercase"]');
-// Asignar el segundo botón a una variable
-const lowercaseButton = document.querySelector('[data-js="button-lowercase"]');
 
-  // Agregar un event listener al primer botón para convertir el valor del input a mayúsculas al hacer clic
-  uppercaseButton.addEventListener("click", () => {
-    input.value = input.value.toUpperCase();
-  });
-
-
-
-  // Agregar un event listener al segundo botón para convertir el valor del input a minúsculas al hacer clic
-  lowercaseButton.addEventListener("click", () => {
-    input.value = input.value.toLowerCase();
-  });
-
+uppercaseButton.addEventListener("click", () => {
+  input.value = input.value.toUpperCase();
+});
